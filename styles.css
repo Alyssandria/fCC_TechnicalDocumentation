@@ -46,8 +46,129 @@
     font-weight: bold;
 }
 
-.header{
-
+.site-header{
     height: 10svh;
     width: 100%;
+}
+
+.navbar{
+    display: none;
+    width: 80%;
+    background-color: gray;
+}
+
+.main-doc{
+    width: 80%;
+    margin: 2.5em auto;
+}
+
+h2{
+    font-weight: normal;
+    font-size: 2rem;
+    margin-bottom: 1.8rem;
+    text-align: center;
+}
+
+.sub-content p{
+    font-size: .8rem;
+    margin-bottom: 1rem;
+}
+
+.sub-content p
+
+.content-highlight{
+    color: #FD0404;
+}
+
+h3{
+    font-weight: normal;
+    margin-bottom: 1.3rem;
+}
+
+.sub-content{
+    margin-bottom: 1.8rem;
+}
+
+.grammar-tbl, .syntax-tbl{
+    margin-bottom: 1rem;
+}
+.grammar-tbl caption, .syntax-tbl caption{
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+
+.grammar-tbl th, .syntax-tbl th, .grammar-tbl td, .syntax-tbl td{
+    border: 1px solid black;
+    font-size: .8rem;
+    text-align: center;
+}
+
+.grammar-tbl th:first-child, .syntax-tbl th:first-child{
+    background-color:#95FD98; 
+}
+
+.grammar-tbl th:last-child, .syntax-tbl th:last-child{
+    background-color:#FF7474; 
+}
+
+.html-anatomy-fig{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.html-anatomy-fig img{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.html-anatomy-fig figcaption{
+    font-size: 0.8rem;
+}
+
+.element-anatomy-lists{
+    margin-left: 1rem;
+    font-size: .8rem;
+}
+
+pre{
+    white-space: pre-wrap;
+}
+
+.element-anatomy-lists li::marker{
+    font-weight: bold;
+
+    color: #FD0404;
+}
+
+.anatomy-highlight{
+    color: #FD0404;
+}
+
+.type{
+    padding-left: 1em;
+    display: block;
+    font-size: .8rem;
+}
+
+.code-wrapper{
+    color: white;
+    background-color:#464646;
+    width: 100%;
+    padding-bottom: 1em;
+    margin-bottom: 1rem;
+}
+
+.code-snippet code{
+    display: block;
+    margin-top: 1em;
+    padding-left: 1em;
+    font-size: .8rem;
+}
+
+.code-snippet figcaption{
+    font-size: .8rem;
+}
+
+.tags{
+    color: #54A4FF;
 }
