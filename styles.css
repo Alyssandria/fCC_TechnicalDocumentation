@@ -88,6 +88,7 @@ h3{
 }
 
 .grammar-tbl, .syntax-tbl{
+    width: 100%;
     margin-bottom: 1rem;
 }
 .grammar-tbl caption, .syntax-tbl caption{
@@ -170,7 +171,7 @@ pre{
 .browser-wrapper div{
     font-family: 'Times New Roman', Times, serif;
     font-size: 1rem;
-    padding-left: 1rem;
+    padding: 0 1rem;
     margin-top: .8em;
 }
 
@@ -268,7 +269,7 @@ pre{
 
 .list-output{
     font-size: .8rem !important;
-    margin-top: .5rem !important;
+    margin-top: 1rem !important;
     margin-left: 1.5rem;
     position: relative;
 }
@@ -284,7 +285,7 @@ pre{
     top:.3em;
 }
 
-.footer a{
+.links a{
     display: block;
     margin: 1em 0;
     color: #303030;
@@ -292,7 +293,33 @@ pre{
 }
 
 
-.footer-links{
+.links{
     width: 100%;
-    text-wrap: wrap;
+}
+
+
+@media (min-width: 26rem){
+    .logo{
+        font-size: 1.6rem;
+    }
+
+    h2{
+        font-size: 2.5rem;
+    }
+
+    p, .sub-content p, figcaption,th,td,span,li,code{
+        font-size: 1rem !important;
+    }
+
+    h3{
+        font-size: 1.7rem;
+    }
+
+    .welcome-output{
+        font-size: 1.5rem !important;
+    }
+
+    .description-output,.list-output{
+        font-size: 1rem !important;
+    }
 }

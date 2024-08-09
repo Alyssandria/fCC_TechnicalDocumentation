@@ -9,3 +9,5 @@
 - Code examples (how to do it while also being accesible) - https://websemantics.uk/articles/displaying-code-in-web-pages/ (Usage of Figure and captions,pre and code tags)
 
 - Displaying less than, greater than and slash symbols. - https://www.toptal.com/designers/htmlarrows/
+
+- Commonly Used Media Queries -- https://www.freecodecamp.org/news/css-media-queries-breakpoints-media-types-standard-resolutions-and-more/
