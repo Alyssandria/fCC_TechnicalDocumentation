@@ -218,12 +218,220 @@
                         closing tag and between them, is the content</figcaption>
                     </figure>
                 </article>
+
+                <article class="sub-content" id="what_are_elements">
+                    <header class="sub-content-header">
+                        <h3>What are elements?</h3>
+                    </header>
+
+                    <p><span class="content-highlight">HTML Elements</span> are the individual components of an HTML document that define its structure and content. 
+                        Each element consists of a start tag, content, and an end tag (except for self-closing/void elements).</p>
+                    <p>As you may recall, we compared tags as labels in a folder of a filing cabinet Now, think of HTML elements as each folders inside a filing 
+                        cabinet. Just as each folder organizes related documents, each HTML element organizes a specific piece of content on a web page.</p>
+
+                    <figure class="code-snippet">
+                        <div class="code-wrapper">
+                            <span class="type">HTML</span>
+                            <hr>
+                            <code>
+                                &lt<span class="tags">h1</span>&gtThis whole code is an Element&lt&#8725<span class="tags">h1</span>&gt
+                            </code>
+                        </div>
+                        <figcaption>The whole block of code above is an example of an HTML element. As you can see, it comprises of the tag and its content</figcaption>
+                    </figure>
+
+                    <p>Some elements have no content and are called <span class="content-highlight">void elements</span>. Take this &ltimg&gt element for example:</p>
+
+                    <figure class="code-snippet">
+                        <div class="code-wrapper">
+                            <span class="type">HTML</span>
+                            <hr>
+                            <code>
+                                &lt<span class="tags">img</span><span class="attribute"> src</span>=<span class="value">”www.sampleImage.com”</span> <span class="attribute">alt</span>=<span class="value">"sample image"</span>&gt
+                            </code>
+                        </div>
+                        <figcaption>As you can see, this has no closing &lt&#8725<span class="tags">img</span>&gt tag and no inner content. This is because an image element doesn't wrap content to affect it. Its purpose is to embed an 
+                            image in the HTML page in the place it appears. And that’s what void elements are, they are elements that does not wrap content around them.</figcaption>
+                    </figure>
+
+                    <p>HTML provides the structure of a webpage by using various <span class="content-highlight">elements</span>, which are represented by <span class="content-highlight">tags</span>. 
+                        These tags tell the browser how to display the content on the page. HTML elements can include text, images, links, forms, and other types of content.</p>
+                </article>
+
+                <article class="sub-content" id="what_are_attributes">
+                    <header class="sub-content-header">
+                        <h3>What are attributes?</h3>
+                    </header>
+                    <p><span class="content-highlight">HTML attributes</span> provide additional information about HTML elements. They are always included in the opening 
+                        tag of an element and usually come in name-value pairs, separated by an equals sign (=).</p>
+                    
+                    <p>Think of HTML attributes like the <span class="content-highlight">extra notes or stickers</span> you might put on a folder in an office. While the labels (tags) indicates what kind of 
+                        documents a folder (elements) holds, the notes or stickers (attributes) provide extra details, such as the folder's importance, date, or any special instructions.</p>
+                    
+                    <figure class="code-snippet">
+                        <div class="code-wrapper">
+                            <span class="type">HTML</span>
+                            <hr>
+                            <code>
+                                &lt<span class="tags">img</span><span class="attribute"> src</span>=<span class="value">”www.sampleImage.com”</span> <span class="attribute">alt</span>=<span class="value">"sample image"</span>&gt
+                            </code>
+                        </div>
+                        <figcaption>The figure above shows an Image element. It has the &lt<span class="tags">img</span>&gt tag and has two attributes, a <span class="tags">src</span> that 
+                            tells the browser where to 
+                            get the image, and an <span class="attribute">alt</span> that shows an 
+                            alternative text if the image does not load in some instances (eg. User has no internet). These two attributes came in “name-value” 
+                            pairs where <span class="tags">src</span> is the name 
+                            and the <span class="value">”www.sampleImage.com”</span> 
+                            is the value. With the img tag alone, the browser cannot tell where to gather the image unless we have a src attribute. 
+                            And that’s what attributes do, they give additional or sometimes necessary (like the src attribute in an img tag) data for 
+                            the browser to display what you want them to. </figcaption>
+                    </figure>
+                </article>
+
+                <article class="sub-content" id="what_is_nesting">
+                    <header class="sub-content-header">
+                        <h3>What is Nesting?</h3>
+                    </header>
+
+                    <p><span class="content-highlight">Nesting</span> in HTML refers to placing one HTML element inside another. 
+                        This hierarchical structure allows for the creation of complex layouts and ensures that elements are properly organized within the document.</p>
+                    <p>Think of nesting like a filing system in an office. Just as folders (child elements) are placed within drawers (parent elements) of a filing 
+                        cabinet to keep documents organized, HTML elements are nested within other elements to create a well-structured web page.</p>
+                    
+                    <figure class="code-snippet">
+                        <div class="code-wrapper">
+                            <span class="type">HTML</span>
+                            <hr>
+                            <code>
+                                &lt<span class="tags">div</span>&gt<span class="nested">&lt<span class="tags">p</span>&gtThis is Nesting&lt&#8725<span class="tags">p</span>&gt</span>&lt&#8725<span class="tags">div</span>&gt
+                            </code>
+                        </div>
+                        <figcaption>The code above shows a &lt<span class="tags">div</span>&gt tag with a &lt<span class="tags">p</span>&gt tag inside it. This is how nesting 
+                            looks like in HTML. With this example, the &lt<span class="tags">div</span>&gt tag is the parent element and the &lt<span class="tags">p</span>&gt tag as the child element. 
+                            Nesting in HTML allows you to create a structured 
+                            and organized document by placing elements within other elements. Proper nesting is essential for ensuring that your web page renders correctly and behaves as expected.</figcaption>
+                    </figure>
+                </article>
+                
             </section>
             <section class="main-section" id="Some_Common_Tags_in_HTML">
                 <header class="main-section-header">
                     <h2>Some Common Tags in HTML</h2>
                 </header>
+
+                <article class="sub-content" id="p_tags">
+                    <header class="sub-content-header">
+                        <h3>Paragraph Tags</h3>
+                    </header>
+
+                    <p>The &ltp&gt tag in HTML is used to define a paragraph. It represents a block of text and is one of the most fundamental elements for structuring and formatting content in HTML documents.</p>
+                    <figure class="code-snippet">
+                        <div class="code-wrapper">
+                            <span class="type">HTML</span>
+                            <hr>
+                            <code>
+                                &lt<span class="tags">p</span>&gtThis is a Paragraph&lt&#8725<span class="tags">p</span>&gt
+                            </code>
+                        </div>
+                        <figcaption class="sr-only">The figure above is an example of a paragraph element with a content of "This is a Paragraph"</figcaption>
+                    </figure>
+                </article>
+
+                <article class="sub-content" id="heading_tags">
+                    <header class="sub-content-header">
+                        <h3>Heading tags</h3>
+                    </header>
+
+                    <p>Heading tags in HTML are used to define headings on a webpage. They range from &lth1&gt to &lth6&gt, with &lth1&gt being the highest level (or most important) heading, and &lth6&gt being the lowest level (or least important) heading. 
+                        These tags help structure the content by breaking it into sections and providing a hierarchy of importance.</p>
+                    
+                    <figure class="code-snippet">
+                        <div class="code-wrapper">
+                            <span class="type">HTML</span>
+                            <hr>
+                            <code>
+                                <span class="block">&lt<span class="tags">h1</span>&gtThis is an h1 Element&lt&#8725<span class="tags">h1</span>&gt</span>
+                                <span class="block">&lt<span class="tags">h2</span>&gtThis is an h2 Element&lt&#8725<span class="tags">h2</span>&gt</span>
+                                <span class="block">&lt<span class="tags">h3</span>&gtThis is an h3 Element&lt&#8725<span class="tags">h3</span>&gt</span>
+                                <span class="block">&lt<span class="tags">h4</span>&gtThis is an h4 Element&lt&#8725<span class="tags">h4</span>&gt</span>
+                                <span class="block">&lt<span class="tags">h5</span>&gtThis is an h5 Element&lt&#8725<span class="tags">h5</span>&gt</span>
+                                <span class="block">&lt<span class="tags">h6</span>&gtThis is an h6 Element&lt&#8725<span class="tags">h6</span>&gt</span>
+                            </code>
+                        </div>
+                        <figcaption class="sr-only">The figure above is an example of heading elements. The figure consists of 6 heading elements from h1 through h6</figcaption>
+                    </figure>
+
+                    <p>Think of heading tags like the titles and subtitles in a book. The main title of the book is like the &lth1&gt tag, chapter titles are like &lth2&gt, section titles within chapters are like &lth3&gt, and so on. This hierarchy helps readers understand the structure and importance of different parts of the content.</p>
+                </article>
+
+                <article class="sub-content" id="image_tags">
+                    <header class="sub-content-header">
+                        <h3>Image Tags</h3>
+                    </header>
+
+                    <p>Image tags in HTML are used to embed images in a web page. The &ltimg&gt tag is an empty (self-closing) tag, meaning it doesn't have a closing tag. Instead, it uses attributes to specify the image source and provide additional information.</p>
+
+                    <figure class="code-snippet">
+                        <div class="code-wrapper">
+                            <span class="type">HTML</span>
+                            <hr>
+                            <code>
+                                &lt<span class="tags">img</span><span class="attribute"> src</span>=<span class="value">”www.sampleImage.com”</span> <span class="attribute">alt</span>=<span class="value">"sample image"</span>&gt
+                            </code>
+                        </div>
+                        <figcaption class="sr-only">The figure above shows an example code for an image element</figcaption>
+                    </figure>
+
+                    <p>Think of an image tag like a picture frame. The frame (the &ltimg&gt tag) holds the picture (the image file) and can have a label or description (attributes) that gives more context about the picture.</p>
+                </article>
+
+                <article class="sub-content" id="anchor_tags">
+                    <header class="sub-content-header">
+                        <h3>Anchor tags</h3>
+                    </header>
+
+                    <p>Anchor tags in HTML, represented by the &lta&gt tag, are used to create hyperlinks, which are clickable links that navigate to other web pages, files, or locations within the same page. The anchor tag is one of the most fundamental elements in HTML for linking content and enabling navigation.</p>
+
+                    <figure class="code-snippet">
+                        <div class="code-wrapper">
+                            <span class="type">HTML</span>
+                            <hr>
+                            <code>
+                                &lt<span class="tags">a</span><span class="attribute"> href</span>=<span class="value">”www.anywebsite.com”</span>&gtClick this link!!&lt&#8725<span class="tags">a</span>&gt
+                            </code>
+                        </div>
+                        <figcaption class="sr-only">The figure above shows an example code for an anchor tag with an href attribute that serves as the link reference. The tag has a content of "Click this link!!!" inside it.</figcaption>
+                    </figure>
+
+                    <p>Think of anchor tags like street signs or bookmarks. Just as a street sign points you to a different location or a bookmark takes you to a specific page in a book, an anchor tag directs users to another page or a specific part of the same page.</p>
+                </article>
+
+                <article class="sub-content" id="div_tags">
+                    <header class="sub-content-header">
+                        <h3>Division tags</h3>
+                    </header>
+
+                    <p>The &ltdiv&gt tag in HTML is a block-level element used to group and organize content. It acts as a container for other HTML elements, allowing you to structure your webpage and apply styles or scripts to sections of your content.</p>
+
+                    <figure class="code-snippet">
+                        <div class="code-wrapper">
+                            <span class="type">HTML</span>
+                            <hr>
+                            <code>
+                                &lt<span class="tags">div</span>&gt<span class="nested">&lt<span class="tags">p</span>&gtThis is a p element inside a Div tag&lt&#8725<span class="tags">p</span>&gt</span>&lt&#8725<span class="tags">div</span>&gt
+                            </code>
+                        </div>
+                        <figcaption>The figure above shows a Paragraph Element with the text "This is a p element inside a Div tag" nested inside a Div tag</figcaption>
+                    </figure>
+
+                    <p>Think of &ltdiv&gt tags like compartments in a drawer organizer. Just as the compartments help separate and organize different items within the drawer, &ltdiv&gt tags help organize and group different elements within a webpage.</p>
+                </article>
+
+
             </section>
+
+
+
             <section class="main-section" id="HTML_Basic_Structure">
                 <header class="main-section-header">
                     <h2>HTML Basic Structure</h2>

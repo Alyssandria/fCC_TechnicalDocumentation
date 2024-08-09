@@ -158,11 +158,15 @@ pre{
     margin-bottom: 1rem;
 }
 
+.code-snippet{
+    margin-bottom: 1rem;
+}
+
 .code-snippet code{
     display: block;
     margin-top: 1em;
     padding-left: 1em;
-    font-size: .8rem;
+    font-size: .7rem;
 }
 
 .code-snippet figcaption{
@@ -171,4 +175,21 @@ pre{
 
 .tags{
     color: #54A4FF;
+}
+
+.attribute{
+    color: #ABD2FF;
+}
+
+.value{
+    color: #FFB10A;
+}
+
+.block{
+    display: block;
+}
+
+.nested{
+    display: block;
+    margin-left: 1rem;
 }
