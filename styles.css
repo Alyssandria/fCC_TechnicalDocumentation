@@ -161,7 +161,24 @@ pre{
     margin-bottom: 1rem;
 }
 
+.browser-wrapper{
+    border: 1px solid black;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+.browser-wrapper div{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    padding-left: 1rem;
+    margin-top: .8em;
+}
+
 .code-snippet{
+    margin-bottom: 1rem;
+}
+
+.browser-output{
     margin-bottom: 1rem;
 }
 
@@ -201,6 +218,10 @@ pre{
     margin-left: 2rem;
 }
 
+.nested-3{
+    margin-left: 3rem;
+}
+
 .structure-list{
     list-style-type: none;
 }
@@ -230,3 +251,48 @@ pre{
     left: -.8rem;
 }
 
+.requirements-list{
+    margin-left: 2rem;
+    font-size: .8rem;
+    margin-bottom: 1rem;
+}
+
+.welcome-output{
+    font-weight: bold;
+    font-size: 1.2rem !important;
+}
+
+.description-output{
+    font-size: .8rem !important;
+}
+
+.list-output{
+    font-size: .8rem !important;
+    margin-top: .5rem !important;
+    margin-left: 1.5rem;
+    position: relative;
+}
+
+.list-output::before{
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background-color: black;
+    border-radius: 50%;
+    left: .5em;
+    top:.3em;
+}
+
+.footer a{
+    display: block;
+    margin: 1em 0;
+    color: #303030;
+    width: 100%;
+}
+
+
+.footer-links{
+    width: 100%;
+    text-wrap: wrap;
+}
