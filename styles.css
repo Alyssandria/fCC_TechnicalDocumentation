@@ -74,8 +74,6 @@ h2{
     margin-bottom: 1rem;
 }
 
-.sub-content p
-
 .content-highlight{
     color: #FD0404;
 }
@@ -123,6 +121,11 @@ h3{
 
 .html-anatomy-fig figcaption{
     font-size: 0.8rem;
+}
+
+p{
+    font-size: .8rem;
+    margin-bottom: 1rem;
 }
 
 .element-anatomy-lists{
@@ -193,3 +196,37 @@ pre{
     display: block;
     margin-left: 1rem;
 }
+
+.nested-2{
+    margin-left: 2rem;
+}
+
+.structure-list{
+    list-style-type: none;
+}
+
+.structure-list li{
+    font-size: 0.8rem;
+}
+
+.structure-list li{
+    color: #FD0404;
+}
+
+.structure-explain{
+    color: #303030;
+    margin-left: 1rem;
+    position: relative;
+}
+
+.structure-explain::before{
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #303030;
+    top: .2rem;
+    left: -.8rem;
+}
+
